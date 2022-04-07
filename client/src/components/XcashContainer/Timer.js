@@ -2,7 +2,7 @@ import { React, PureComponent } from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 
 class Timer extends PureComponent {
-    tickTime = 30000;
+    tickTime = 60000;
     constructor(props) {
         super(props);
         this.tickInterval = null;

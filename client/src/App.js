@@ -3,12 +3,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Footer from './components/Footer';
 import Container from 'react-bootstrap/Container';
-import MoneroContainer from './components/MoneroContainer/MoneroContainer';
+import XcashContainer from './components/XcashContainer/XcashContainer';
 
 function App() {
     return (
         <Container className="app">
-            <MoneroContainer />
+            <XcashContainer />
             <Footer></Footer>
         </Container>
     );

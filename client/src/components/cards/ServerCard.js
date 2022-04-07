@@ -13,7 +13,7 @@ function ServerCard(props) {
                         <Row>
                             <Col md="6">Database Size:</Col>
                             <Col md="6">
-                                {(props.info.database_size / 1024 / 1024 / 1024).toFixed(2)} GiB
+							{props.size.current_estimated_blockchain_size}
                             </Col>
                         </Row>
                         <Row>

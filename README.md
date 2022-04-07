@@ -1,59 +1,73 @@
-# monero-dashboard
+# xcash-dashboard
 
-The Monero Dashboard was designed to be a nicely formatted viewport into your local Monero node.
+The X-Cash Dashboard was designed to be a nicely formatted viewport into your local X-CASH node.
 
 ![screenshot](readme_assets/screenshot.png)
 
+# Requirements
+
+A local xcash daemon running.
+NPM
+Node
+
+You can connect to a remote node also.
+
+# Notice
+
+If you run xcashd with `--restricted-rpc`, it will not show `Active Connections` on the dasboard, as the RPC will not respond to that command.
+
 # Getting Started
 
-The dashboard is a node application that runs on port `3000` and connects to a full node running at `localhost:18081`. These defaults can be changed by creating a `.env` file (copied from`sample.env`).
+The dashboard is a node application that runs on port `3000` and connects to a full node running at `localhost:18281`. These defaults can be changed by creating a `.env` file (copied from`sample.env`).
+
+Download:
+```git clone https://github.com/element0355/xcash-dashboard.git```
+
+Move to the xcash-dashboard folder:
+```cd xcash-dashboard```
+
+Make changes to the `sample.env` file (description of settings below):
+```nano sample.env```
+
+Move `sample.env` to .env`:
+```
+mv sample.env .env
+```
 
 **.env**
 
 ```
-MONERO_HOST=10.1.1.1
-MONERO_PORT=18081
+XCASH_HOST=10.1.1.1
+XCASH_PORT=18281
 ```
 
 All Settings:
 
 ```
-MONERO_HOST=<IP of remote node> | defaults to localhost
-MONERO_PORT=<port of remote node> | defaults to 18081
-TICKER=<enable XMR ticker> | defaults to false
+XCASH_HOST=<IP of remote node> | defaults to localhost
+XCASH_PORT=<port of remote node> | defaults to 18281
+TICKER=<enable X-Cash ticker> | defaults to false
 PORT=<port to run the app> | defaults to 3000, needs elevated access to run at 80
 ```
 
 That said, the host machine will need to have `node` and `npm` installed.
 
-To Start the dashboard, run `npm start`
+```
+sudo apt install nodejs npm
+```
+
+To Start the dashboard, run `npm start` inside the `xcash-dashboard` folder.
+
+Access the dashboard at `http://localhost:3000`
 
 # Contributing
 
 Please feel free to either submit issues for improvements, or fork the repo and make pull requests.
 
-The client will also need a .env file created in `client/` to allow the react server and node api servers to co-exist.
-
-```
-PORT=3001
-```
-
-To get started, run the following commands:
-
-```
-npm run init
-npm run dev
-```
-
-This will start the api server on port `3000`, and the react server on `3001`. Do your testing/dev against `localhost:3001`
-
-Prettier and eslint will keep your code in line with the coding standards for the project. Code comments: The more the merrier. Please
-comment any new functions or new program flows.
-
-Open up all pull requests against the `develop` branch.
+Open up all pull requests against the `xcash_dev` branch.
 
 ### Donate
 
-8Adfyz4eUijhttLTa4W3Vzj2SFZGVWyT6GX4HADXScQ1d5FgyGssQETHwKZhSn7CStWafUcXzr6758njdqXPsYMdSEkLMyb
+XCA1T2PWnamcbC4adG1L17XiCvqCDB3EwDzr1MEYxy4rQfzxxuiPdeTRSgtXbghVAVVgRK6V26ZwK2JqXTfkvDH34dJgDKb2F7
 
 ![qr](client/src/qr.jpg)

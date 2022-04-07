@@ -3,16 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function MoneroCard(props) {
+function XcashCard(props) {
     return (
         <Card className="dataCard">
             <Card.Body>
-                <Card.Title>Monero Stats</Card.Title>
+                <Card.Title>X-CASH Stats</Card.Title>
                 <Card.Text>
                     <Container>
                         <Row>
-                            <Col md="6">Difficulty</Col>
-                            <Col md="6">{props.info.difficulty}</Col>
+                            <Col md="6">Last Reward:</Col>
+                            <Col md="6">{(props.reward.reward/1000000).toLocaleString("en-US")}</Col>
                         </Row>
                         <Row>
                             <Col md="6">Height</Col>
@@ -29,4 +29,4 @@ function MoneroCard(props) {
     );
 }
 
-export default MoneroCard;
+export default XcashCard;
