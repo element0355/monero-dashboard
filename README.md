@@ -24,10 +24,14 @@ Download:
 ```git clone https://github.com/element0355/xcash-dashboard.git```
 
 Move to the xcash-dashboard folder:
-```cd xcash-dashboard```
+```
+cd xcash-dashboard
+```
 
 Make changes to the `sample.env` file (description of settings below):
-```nano sample.env```
+```
+nano sample.env
+```
 
 Move `sample.env` to `.env`:
 ```
