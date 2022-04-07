@@ -12,7 +12,7 @@ function Footer() {
                         Like the dashboard?
                         <br /> Please Consider Donating:
                         <br />
-                        8Adfyz4eUijhttLTa4W3Vzj2SFZGVWyT6GX4HADXScQ1d5FgyGssQETHwKZhSn7CStWafUcXzr6758njdqXPsYMdSEkLMyb
+                        XCA1T2PWnamcbC4adG1L17XiCvqCDB3EwDzr1MEYxy4rQfzxxuiPdeTRSgtXbghVAVVgRK6V26ZwK2JqXTfkvDH34dJgDKb2F7
                     </Col>
                     <Col>
                         <img alt="qr code" src={qr} style={{ width: '125px' }}></img>

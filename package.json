@@ -1,10 +1,10 @@
 {
-    "name": "monero-dashboard",
+    "name": "xcash-dashboard",
     "version": "1.0.9",
-    "description": "Monero Dashboard for pulling useful information from a local full node.",
+    "description": "X-Cash Dashboard for pulling useful information from a local full node.",
     "main": "server/index.js",
     "scripts": {
-        "build": "cd client && npm run build && cd ../ && git add .",
+        "build": "cd client && npm run build && cd ../",
         "changelog": "auto-changelog && git add CHANGELOG.md",
         "dev": "concurrently -p \"[{name}]\" -n \"NODE,REACT\" -c \"bgBlue.bold,bgGreen.bold\" \"nodemon start\" \"cd client && npm start\"",
         "format": "prettier --write \"{**/,}*.{js,jsx,css,less,scss,json,graphql,gql,md,yaml,yml,html,webmanifest,babelrc,prettierrc}\"",
@@ -17,18 +17,18 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/jnbarlow/monero-dashboard.git"
+        "url": "git+ssh://git@github.com/element0355/xcash-dashboard"
     },
     "keywords": [
-        "monero",
+        "xcash",
         "dashboard"
     ],
     "author": "John Barlow",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/jnbarlow/monero-dashboard/issues"
+        "url": "https://github.com/element0355/xcash-dashboard/issues"
     },
-    "homepage": "https://github.com/jnbarlow/monero-dashboard#readme",
+    "homepage": "https://github.com/element0355/xcash-dashboard#readme",
     "dependencies": {
         "dotenv": "^8.2.0",
         "express": "^4.17.1",

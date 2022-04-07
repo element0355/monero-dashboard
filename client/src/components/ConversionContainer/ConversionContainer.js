@@ -34,7 +34,7 @@ class ConversionContainer extends PureComponent {
         try {
             const result = await axios({
                 method: 'GET',
-                url: 'https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=BTC,USD,EUR'
+                url: 'https://min-api.cryptocompare.com/data/price?fsym=XCASH&tsyms=BTC,USD,EUR'
             });
 
             this.setState({

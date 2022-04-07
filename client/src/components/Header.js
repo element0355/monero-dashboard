@@ -2,8 +2,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Timer from './MoneroContainer/Timer';
-import monero_logo from '../monero-logo.png';
+import Timer from './XcashContainer/Timer';
+import xcash_logo from '../xcash-logo.png';
 import Prices from './ConversionContainer/ConversionContainer';
 import axios from 'axios';
 import { React, PureComponent } from 'react';
@@ -14,7 +14,7 @@ class Header extends PureComponent {
         super(props);
         this.remoteVersion = version.version;
         this.state = {
-            ticker: false
+            ticker: true
         };
     }
 
@@ -37,7 +37,7 @@ class Header extends PureComponent {
                 ticker: result.data.TICKER === 'true'
             });
         } catch (err) {
-            console.error('Error fetching monero data', err);
+            console.error('Error fetching xcash data', err);
         }
     };
 
@@ -48,7 +48,7 @@ class Header extends PureComponent {
         try {
             const result = await axios({
                 method: 'GET',
-                url: `https://raw.githubusercontent.com/jnbarlow/monero-dashboard/main/version.json?${Date().getTime()}`
+                url: `https://raw.githubusercontent.com/element0355/xcash-dashboard/main/version.json`
             });
 
             this.remoteVersion = result.data.version;
@@ -69,12 +69,12 @@ class Header extends PureComponent {
                     <Row>
                         <Col md="8">
                             <h1>
-                                <img src={monero_logo} className="logo" /> Dashboard
+                                <img src={xcash_logo} className="logo" /> Dashboard
                             </h1>
                             <Container>
                                 <Row>
-                                    <Col md="4">Monero Node Version:</Col>
-                                    <Col>{props.info.version}</Col>
+                                    <Col md="4">X-CASH Node Version:</Col>
+                                    <Col>{props.xversion.version}</Col>
                                 </Row>
                                 <Row>
                                     <Col md="4">Update Available:</Col>
@@ -96,7 +96,7 @@ class Header extends PureComponent {
                                             return (
                                                 <Col>
                                                     <a
-                                                        href="https://github.com/jnbarlow/monero-dashboard"
+                                                        href="https://github.com/element0355/xcash-dashboard"
                                                         target="_blank"
                                                     >
                                                         Update Available!
