@@ -7,8 +7,8 @@ The X-Cash Dashboard was designed to be a nicely formatted viewport into your lo
 # Requirements
 
 A local xcash daemon running.
-NPM
-Node
+`NPM`
+`Node`
 
 You can connect to a remote node also.
 
@@ -29,7 +29,7 @@ Move to the xcash-dashboard folder:
 Make changes to the `sample.env` file (description of settings below):
 ```nano sample.env```
 
-Move `sample.env` to .env`:
+Move `sample.env` to `.env`:
 ```
 mv sample.env .env
 ```
