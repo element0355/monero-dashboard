@@ -2,7 +2,7 @@
 
 The X-Cash Dashboard was designed to be a nicely formatted viewport into your local X-CASH node.
 
-![screenshot](readme_assets/screenshot.png)
+![screenshot](readme_assets/screenshot.PNG)
 
 # Requirements
 
