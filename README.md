@@ -4,6 +4,10 @@ The X-Cash Dashboard was designed to be a nicely formatted viewport into your lo
 
 ![screenshot](readme_assets/screenshot.PNG)
 
+# demo
+
+http://138.197.11.17:3000/
+
 # Requirements
 
 A local xcash daemon running.
