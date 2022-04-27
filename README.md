@@ -6,7 +6,9 @@ The X-Cash Dashboard was designed to be a nicely formatted viewport into your lo
 
 # demo
 
-http://138.197.11.17:3000/
+https://demo.x-delegate.io
+
+The demo does not show active connections
 
 # Requirements
 
