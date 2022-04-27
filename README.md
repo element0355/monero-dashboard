@@ -8,7 +8,7 @@ The X-Cash Dashboard was designed to be a nicely formatted viewport into your lo
 
 https://demo.x-delegate.io
 
-The demo does not show active connections
+The demo does not show active connections, and is connected to a daemon running on the testnet.
 
 # Requirements
 
